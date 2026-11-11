@@ -14,7 +14,7 @@ if errorlevel 1 (
 
 set "VSWHERE=%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"
 if not exist "%VSWHERE%" goto missing_vs
-for /f "usebackq delims=" %%I in (`"%VSWHERE%" -latest -products * -version "[17.0,18.0)" -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set "VS_ROOT=%%I"
+for /f "usebackq delims=" %%I in (`powershell.exe -NoProfile -Command "& $env:VSWHERE -latest -products '*' -version '[17.0,18.0)' -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath"`) do set "VS_ROOT=%%I"
 if not defined VS_ROOT goto missing_vs
 call "%VS_ROOT%\VC\Auxiliary\Build\vcvars64.bat" || exit /b 1
 
