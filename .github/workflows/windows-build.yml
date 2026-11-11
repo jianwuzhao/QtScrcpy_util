@@ -15,6 +15,21 @@ jobs:
       - name: Compile and deploy Qt runtime
         shell: cmd
         run: build-windows.cmd "%QT_ROOT_DIR%"
+      - name: Start packaged Windows executable
+        shell: pwsh
+        run: |
+          $folder = (Resolve-Path 'output/x64/Release').Path
+          $env:PATH = "$env:SystemRoot\System32;$env:SystemRoot"
+          Remove-Item Env:QT_PLUGIN_PATH, Env:QML2_IMPORT_PATH -ErrorAction SilentlyContinue
+          $app = Start-Process -FilePath (Join-Path $folder 'QtScrcpy.exe') -WorkingDirectory $folder -PassThru
+          try {
+            if ($app.WaitForExit(5000)) {
+              throw "QtScrcpy exited during startup (exit code $($app.ExitCode))."
+            }
+            Write-Host 'QtScrcpy stayed running with the packaged runtime.'
+          } finally {
+            if (!$app.HasExited) { Stop-Process -Id $app.Id -Force }
+          }
       - uses: actions/upload-artifact@v4
         with:
           name: QtScrcpy-Windows-x64

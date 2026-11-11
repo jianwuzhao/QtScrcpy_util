@@ -11,6 +11,8 @@
 /server/local.properties
 /build/
 build-*
+!/build-windows.cmd
+!/build-macos.sh
 *.DS_Store
 userdata.ini
 Info_Mac.plist
