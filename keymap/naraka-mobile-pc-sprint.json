@@ -1,0 +1,281 @@
+{
+  "switchKey": "Key_QuoteLeft",
+  "mouseMoveMap": {
+    "startPos": {
+      "x": 0.55,
+      "y": 0.4
+    },
+    "speedRatio": 10,
+    "speedRatioX": 3.25,
+    "speedRatioY": 1.5,
+    "smallEyes": {
+      "comment": "自由观察",
+      "type": "KMT_CLICK",
+      "key": "Key_Alt",
+      "pos": {
+        "x": 0.77151,
+        "y": 0.29216
+      },
+      "switchMap": false
+    }
+  },
+  "keyMapNodes": [
+    {
+      "comment": "WASD 移动",
+      "type": "KMT_STEER_WHEEL",
+      "centerPos": {
+        "x": 0.196,
+        "y": 0.72
+      },
+      "leftOffset": 0.045,
+      "rightOffset": 0.045,
+      "upOffset": 0.098,
+      "downOffset": 0.098,
+      "leftKey": "Key_A",
+      "rightKey": "Key_D",
+      "upKey": "Key_W",
+      "downKey": "Key_S",
+      "sprintDelayMs": 300,
+      "sprintMultiplier": 1.9
+    },
+    {
+      "comment": "普攻/长按蓄力",
+      "type": "KMT_CLICK",
+      "key": "LeftButton",
+      "pos": {
+        "x": 0.8,
+        "y": 0.77624
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "跳跃",
+      "type": "KMT_CLICK",
+      "key": "Key_Space",
+      "pos": {
+        "x": 0.87045,
+        "y": 0.67426
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "闪避",
+      "type": "KMT_CLICK",
+      "key": "Key_Shift",
+      "pos": {
+        "x": 0.87045,
+        "y": 0.88119
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "飞索",
+      "type": "KMT_CLICK",
+      "key": "Key_Q",
+      "pos": {
+        "x": 0.87045,
+        "y": 0.48812
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "技能",
+      "type": "KMT_CLICK",
+      "key": "Key_F",
+      "pos": {
+        "x": 0.685,
+        "y": 0.88119
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "奥义",
+      "type": "KMT_CLICK",
+      "key": "Key_V",
+      "pos": {
+        "x": 0.625,
+        "y": 0.88119
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "武器1",
+      "type": "KMT_CLICK",
+      "key": "Key_1",
+      "pos": {
+        "x": 0.88182,
+        "y": 0.29505
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "武器2",
+      "type": "KMT_CLICK",
+      "key": "Key_2",
+      "pos": {
+        "x": 0.88182,
+        "y": 0.36634
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "背包",
+      "type": "KMT_CLICK",
+      "key": "Key_Tab",
+      "pos": {
+        "x": 0.37709,
+        "y": 0.87994
+      },
+      "switchMap": true
+    },
+    {
+      "comment": "地图",
+      "type": "KMT_CLICK",
+      "key": "Key_M",
+      "pos": {
+        "x": 0.11727,
+        "y": 0.14653
+      },
+      "switchMap": true
+    },
+    {
+      "comment": "升龙",
+      "type": "KMT_CLICK",
+      "key": "RightButton",
+      "pos": {
+        "x": 0.81689,
+        "y": 0.58767
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "振刀",
+      "type": "KMT_CLICK",
+      "key": "Key_G",
+      "pos": {
+        "x": 0.74219,
+        "y": 0.87779
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "交互/拾取第一项",
+      "type": "KMT_CLICK",
+      "key": "Key_E",
+      "pos": {
+        "x": 0.63732,
+        "y": 0.3555
+      },
+      "switchMap": false,
+      "releaseCursorUntilClick": true,
+      "cursorPanelLeft": 0.64
+    },
+    {
+      "comment": "弦玥",
+      "type": "KMT_CLICK",
+      "key": "Key_T",
+      "pos": {
+        "x": 0.56561,
+        "y": 0.88979
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "副攻击",
+      "type": "KMT_CLICK",
+      "key": "Key_X",
+      "pos": {
+        "x": 0.71703,
+        "y": 0.76495
+      },
+      "switchMap": false
+    },
+    {
+      "type": "KMT_CLICK",
+      "key": "Key_R",
+      "pos": {
+        "x": 0.91682,
+        "y": 0.77056
+      },
+      "comment": "连击",
+      "switchMap": false
+    },
+    {
+      "type": "KMT_CLICK",
+      "key": "Key_C",
+      "pos": {
+        "x": 0.91889,
+        "y": 0.58535
+      },
+      "comment": "下坠",
+      "switchMap": false
+    },
+    {
+      "type": "KMT_CLICK",
+      "key": "Key_Z",
+      "pos": {
+        "x": 0.85252,
+        "y": 0.17873
+      },
+      "comment": "符",
+      "switchMap": false
+    },
+    {
+      "type": "KMT_CLICK",
+      "key": "Key_4",
+      "pos": {
+        "x": 0.90103,
+        "y": 0.17176
+      },
+      "switchMap": false
+    },
+    {
+      "type": "KMT_CLICK",
+      "key": "Key_T",
+      "pos": {
+        "x": 0.18497,
+        "y": 0.17808
+      },
+      "comment": "语音",
+      "switchMap": false
+    },
+    {
+      "type": "KMT_CLICK",
+      "key": "Key_Y",
+      "pos": {
+        "x": 0.18677,
+        "y": 0.10246
+      },
+      "switchMap": false
+    },
+    {
+      "type": "KMT_CLICK",
+      "key": "Key_F4",
+      "pos": {
+        "x": 0.25673,
+        "y": 0.06141
+      },
+      "switchMap": false
+    },
+    {
+      "type": "KMT_CLICK",
+      "key": "Key_Escape",
+      "pos": {
+        "x": 0.90498,
+        "y": 0.05044
+      },
+      "switchMap": false
+    },
+    {
+      "type": "KMT_CLICK",
+      "key": "Key_6",
+      "pos": {
+        "x": 0.79576,
+        "y": 0.04806
+      },
+      "switchMap": false
+    }
+  ],
+  "cursorHoldKey": "Key_Alt",
+  "weaponSwitchKey": "Key_3"
+}
